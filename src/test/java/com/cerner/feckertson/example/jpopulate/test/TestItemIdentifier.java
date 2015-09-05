@@ -1,26 +1,25 @@
 package com.cerner.feckertson.example.jpopulate.test;
 
 import org.junit.Assert;
-import org.junit.Ignore;
 import org.junit.Test;
 
-import com.cerner.feckertson.example.jpopulate.IdentifiedItem;
+import com.cerner.feckertson.example.jpopulate.ItemIdentifier;
 
 import io.github.benas.jpopulator.api.Populator;
 import io.github.benas.jpopulator.impl.PopulatorBuilder;
 
 /**
- * Unit tests for IdentifiedItem
+ * Unit Test for ItemIdentifier.
+ * 
  * @author Fred Eckertson
  *
  */
-public class TestIdentifiedItem {
+public class TestItemIdentifier {
 
     @Test
-    @Ignore
     public void testIt() {
         Populator populator = new PopulatorBuilder().build();
-        IdentifiedItem identifiedItem = populator.populateBean(IdentifiedItem.class);
-        Assert.assertNotNull(identifiedItem);
+        ItemIdentifier itemIdentifier = populator.populateBean(ItemIdentifier.class);
+        Assert.assertNotNull(itemIdentifier);
     }
 }
